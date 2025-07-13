@@ -1,88 +1,71 @@
-# UNO_REVERSE
+# 🔁 **UNO_REVERSE**
 
-💎✨ Agentic AI Scheduling Assistant
+## 💎✨ *Agentic AI Scheduling Assistant*
 
-🧨 The Problem:
-"When are you free?" — the question that haunts every team.
+---
 
-Scheduling meetings across time zones and busy calendars is frustrating, slow, and full of conflicts. Existing tools only suggest slots — they don't think or negotiate.
+## 🧨 **The Problem:**
+> _“When are you free?”_ — the question that haunts every team 😩
 
-💡 Our Visionary Solution:
+Scheduling meetings across time zones 🌍 and busy calendars 📅 is frustrating, slow, and full of conflicts.  
+**Existing tools only suggest slots — they don’t think or negotiate.**
 
-Introducing Agentic AI Scheduling Assistant — your smart, autonomous AI that handles meeting scheduling like a human assistant on steroids.
+---
 
-🔥 Key abilities:
-✅ Reads your request from JSON or email.
-✅ Analyzes all participant calendars live.
-✅ Finds optimal time slots automatically.
-✅ Negotiates conflicts and proposes smart alternatives.
-✅ Writes polite, human-like emails using an LLM.
+## 💡 **Our Visionary Solution:**
+🎉 Introducing **Agentic AI Scheduling Assistant** —  
+_Your smart, autonomous AI that handles scheduling like a human assistant on steroids!_ 🚀
 
-🚀 Why We’re Different (Our USP):
-⚡ Agentic Reasoning: Doesn’t just suggest times — it reasons, negotiates, and decides.
-🤝 LLM-powered Communication: Messages sound human, polite, and personalized.
-🧠 End-to-End Automation: From raw input → polite final output → calendar-ready.
-🌍 Timezone & conflict aware: Truly global and scalable.
+---
 
-💥 Pipeline Flow
-<img width="1280" height="985" alt="image" src="https://github.com/user-attachments/assets/20e281ea-0f04-47b2-ac88-5d6396cbd984" />
+## 🔥 **Key Abilities:**
+- ✅ **Reads** your request from _JSON or email_  
+- 🔍 **Analyzes** all participant calendars _live_  
+- 📅 **Finds** optimal time slots _automatically_  
+- 🧠 **Negotiates** conflicts & proposes _smart alternatives_  
+- ✉️ **Writes** polite, human-like emails using an **LLM**
 
-💻 Tech Stack
-🤖 Python & Jupyter — clean, modular notebooks for rapid iteration.
+---
 
-🗓 Google Calendar API — live conflict detection and free/busy checks.
+## 🚀 **Why We’re Different (Our USP):**
 
-🧠 vLLM (DeepSeek / LLaMA) — polite, natural language email generation.
+- ⚡ **Agentic Reasoning**: Doesn’t just suggest times — it *reasons*, *negotiates*, and *decides* 🤖  
+- 💬 **LLM-Powered Communication**: Generates _human-like, polite, and personalized emails_  
+- 🔄 **End-to-End Automation**: From _raw input_ → _smart scheduling_ → _calendar-ready output_  
+- 🌐 **Timezone & Conflict Aware**: Truly _global_, _scalable_, and _self-resolving_  
+- 🔎 **Attendee Availability Insight**: Returns *individual free-time slots* for full transparency 🕒
 
-⚡ AMD MI300 GPU — super-fast large model inference.
+---
 
-💬 Agentic AI architecture — true autonomous agent behavior.
+## 🧠 **Architecture Pipeline Flow**
+![Pipeline Flow](https://github.com/user-attachments/assets/20e281ea-0f04-47b2-ac88-5d6396cbd984)
 
+---
 
-🎯 Workflow (How It Works):
+## 💻 **Tech Stack**
+- 🐍 **Python & Jupyter** — clean, modular notebooks for rapid iteration  
+- 📆 **Google Calendar API** — live conflict detection & availability analysis  
+- 🧠 **vLLM (DeepSeek / LLaMA)** — natural, polite email generation  
+- ⚡ **AMD MI300 GPU** — super-fast large model inference  
+- 🧬 **Agentic AI Architecture** — _true autonomous agent behavior_
 
+---
 
-1️⃣ Receive JSON request — subject, date, location, attendees.
+## 🎯 **Workflow (How It Works):**
 
+1️⃣ **Receive JSON request** — subject, date, location, attendees  
+2️⃣ **Parse & extract key details** — time, participants  
+3️⃣ **Check for live conflicts** — via Google Calendar API  
 
-2️⃣ Parse & extract key details — time, participants.
+🔁 **If Conflict:**
+- ✅ Suggest _smart alternative slots_  
+- ✅ Generate _polite reschedule email_ via **LLM**
 
+✅ **If No Conflict:**
+- ✅ Confirm instantly  
+- ✅ Generate _polite confirmation email_
 
-3️⃣ Check conflicts live — using Google Calendar API.
+📤 **Return final, clean JSON** — ready to send or update calendar
 
-
-4️⃣ If conflict?
-
-
-  ✔ Suggest smart alternative slots.
-
-  
-  ✔ Generate human-like polite reschedule emails via LLM.
-
-  
-5️⃣ If no conflict?
-
-
-  ✔ Confirm instantly.
-  
-  
-  ✔ Generate polite confirmation email.
-
-  
-6️⃣ Return final, clean JSON — ready to send or update calendars.
-
-🌟 Sample Final JSON Output
-```
-{
-  "Request_id": "6118b54f-907b-4451-8d48-dd13d76033a5",
-  "Confirmed": true,
-  "ProposedTime": {
-    "start": "2025-07-09T12:34:55",
-    "end": "2025-07-09T13:04:55"
-  },
-  "Location": "IIT Mumbai",
-  "Attendees": ["usertwo.amd@gmail.com", "userthree.amd@gmail.com"],
-  "Message": "Hi team, your meeting on 'Agentic AI Project Status Update' is confirmed for Thursday 09 July 2025 at IIT Mumbai. Looking forward to seeing you all!"
-}
-```
+---
 
