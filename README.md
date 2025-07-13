@@ -7,7 +7,8 @@
 
 Scheduling meetings across time zones and busy calendars is frustrating, slow, and full of conflicts. Existing tools only suggest slots — they don't think or negotiate.
 
-💡 Our Visionary Solution
+💡 Our Visionary Solution 
+
 Introducing Agentic AI Scheduling Assistant — your smart, autonomous AI that handles meeting scheduling like a human assistant on steroids.
 
 🔥 Key abilities:
