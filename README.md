@@ -50,7 +50,8 @@ Introducing Agentic AI Scheduling Assistant — your smart, autonomous AI that h
   ✔ Generate polite confirmation email.
 6️⃣ Return final, clean JSON — ready to send or update calendars.
 
-🌟 Sample Final JSON Output
+🌟 Sample Final JSON Output:
+
 {
   "Request_id": "6118b54f-907b-4451-8d48-dd13d76033a5",
   "Confirmed": true,
